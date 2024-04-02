@@ -30,10 +30,10 @@ maintainers = [
     { name = "Telespazio UK Ltd", email = "steven.gillies@telespazio.com" },
 ]
 
-dependencies = []
+dependencies = ["click~=8.1.7", "pulsar-client~=3.4"]
 
 [project.optional-dependencies]
-dev = ["pip-tools", "pytest", "black"]
+dev = ["pip-tools", "black"]
 
 [project.urls]
 homepage = "https://github.com/UKEODHP/pulsar-demo"
