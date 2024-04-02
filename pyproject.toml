@@ -1,0 +1,50 @@
+# Copyright 2024 Telespazio UK Ltd
+#    
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#     http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+[project]
+name = "pulsar_demo"
+version = "0.1.0"
+description = "Examples of how to publish and subscribe to Pulsar messages."
+readme = "README.md"
+
+requires-python = ">=3.11"
+
+license = { file = "LICENSE" }
+
+authors = [
+    { name = "Telespazio UK Ltd", email = "steven.gillies@telespazio.com" },
+]
+
+maintainers = [
+    { name = "Telespazio UK Ltd", email = "steven.gillies@telespazio.com" },
+]
+
+dependencies = []
+
+[project.optional-dependencies]
+dev = ["pip-tools", "pytest", "black"]
+
+[project.urls]
+homepage = "https://github.com/UKEODHP/pulsar-demo"
+
+[tool.black]
+line-length = 100
+target-version = ['py311']
+
+[tool.ruff]
+line-length = 110
+target-version = "py311"
+select = ["E", "F", "B", "W"]
+
+exclude = ["*.egg-info", ".git", ".venv", "__pypackages__", "build"]
