@@ -7,7 +7,7 @@ An example of how to publish and subscribe to a Pulsar message queue.
 ```bash
 python -m venv .venv
 . .venv/bin/activate
-pip install requirements.txt
+pip install -r requirements.txt
 ```
 
 ## Execution
